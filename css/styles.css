@@ -1,3 +1,25 @@
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
 :root {
 --primary-white-color:#FFFFFF;
 --logo-color:#000000;
@@ -7,6 +29,7 @@
 
 
  body {
+    margin: 0;
   color: var(--logo-color);
   font-family: 'Roboto';
   font-size: 14px;
@@ -19,13 +42,17 @@
  }
 
  .list {
+     padding: 0;
+     margin: 0;
      list-style: none;
  }
  
 /* header */
  
+
  .logo {
-    font-family: 'Raleway';
+    width: 145px;
+     font-family: 'Raleway'; 
      font-weight: 700;
      font-size: 26px;
      line-height: 1.19;
@@ -62,24 +89,32 @@
 .current-link {
     color: var(--accent-color)
 } 
+
+
 /* hero */
 
 .section-hero {
     background-color: #2F303A;
+    text-align: center;
+    padding-bottom: 94px;
 }
 
 .hero-title {
+    width: 696px;
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-bottom: 30px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
-  text-transform: uppercase;
+ text-transform: uppercase;
  letter-spacing: 0.06em;
 }
   
 .btn,
 .btn-light {
+    border: 1px solid transparent;
        cursor: pointer;
         font-family: inherit;
         font-weight: 500;
@@ -96,6 +131,8 @@
     
 }
 .btn-light {
+    width: 200px;
+    margin-bottom: 200px;
     color: #FFFFFF;
     background-color: #2196F3;
 }
@@ -116,7 +153,13 @@
 
 /* description */
 
+.description {
+    width: 1170px;
+    padding-bottom: 94px;
+}
+
 .description-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -129,15 +172,39 @@
   line-height: 1.71;
 }
 
+/* about */
+
+.about {
+    padding-bottom: 94px;
+}
+.about-title {
+    width: 376px;
+    margin-left: 412px;
+    margin-bottom: 50px;
+}
+
+
 /* team */
 
-.section-title {
-       font-size: 36px;
+.team {
+    padding-bottom: 0;
+}
+
+.team-title {
+    width: 264px;
+    margin-left: 468px;
+    margin-bottom: 50px;
+}
+
+.about-title,
+.team-title {
+      font-size: 36px;
       line-height: 1.17;
       text-align: center;     
 }
 
 .team-name {
+
       font-weight: 500;
       font-size: 16px;
       line-height: 1.19;     

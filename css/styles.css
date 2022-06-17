@@ -146,10 +146,14 @@ html {
 
 /* hero */
 
+.hero {
+    padding-bottom: 94px;
+}
+
+
 .section-hero {
     background-color: #2F303A;
     text-align: center;
-    padding-bottom: 94px;
 }
 
 .hero-title {

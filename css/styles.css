@@ -2,6 +2,13 @@ html {
     box-sizing: border-box;
 }
 
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -10,17 +17,6 @@ html {
     margin-right: 15px;
     margin: auto;
 }
-
-
-
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-
 
 :root {
 --primary-white-color:#FFFFFF;
@@ -51,7 +47,11 @@ html {
  
  h1, 
  h2, 
- h3 {
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
    padding: 0;
    margin: 0;
  }

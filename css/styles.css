@@ -20,7 +20,7 @@ html {
 --primary-white-color:#FFFFFF;
 --logo-color:#000000;
 --secondary-text-color:#212121;
-
+--text-color:#FFFFFF;
 --primary-text-color:#757575;
 --accent-color: #2196F3;
 }
@@ -84,8 +84,7 @@ html {
 
 .nav-lists {
     display: flex;
-    margin-left: 93px;
-    
+    margin-left: 93px;  
 }
 
 
@@ -95,11 +94,7 @@ html {
 
 
 .nav-lists .nav-item {
-   /* padding-top: 32px; 
-   padding-bottom: 32px; */
-   display: block
-
-
+   display: block;
 }
    
 .nav-item,
@@ -107,9 +102,7 @@ html {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-.nav-item {
-    color :var(--secondary-text-color);
+    color: var(--secondary-text-color);
 }
 
 .contacts {
@@ -119,18 +112,10 @@ html {
 .contact-nav {
     display: flex;
     margin-left: auto;
-    /* margin-top: 32px;
-    margin-bottom: 32px;
-     */
 }
-
 
 .contact-list {
-  
-}
- 
-.contact-list + .contact-list {
-    margin-left: 50px;
+    margin-right: 50px; 
 }
 
 .contact-link {
@@ -139,8 +124,8 @@ html {
     color: var(--primary-text-color);
 }
 
-.contact-link:focus,
-.contact-link:hover{
+.contact-links:focus,
+.contact-links:hover{
     color: var(--accent-color);
 
 }
@@ -167,7 +152,6 @@ html {
     background-color: #2F303A;
     text-align: center;
     padding: 200px 0;
-
 }
 
 .hero-title {
@@ -196,27 +180,25 @@ html {
      line-height: 1.88;
      letter-spacing: 0.06em;
      background-color: #faf4fa;
-    
     }
     
   .btn:hover,
   .btn:focus {
-    color:#FFFFFF;
-    background-color: var(--accent-color);
-    
+    color:var(--text-color);
+    background-color: var(--accent-color); 
 }
+
 .btn-light {
     box-shadow: 0px 4px 4px rgba(0  0  0  / 15%);
     border-radius: 4px;
     padding: 10px 31px;
-    color: #FFFFFF;
+    color: var(--text-color);
     background-color: var(--accent-color);
 }
 
-.btn-active:active {
+.btn.active {
     background-color: var(--accent-color);
-    color: #FFFFFF;
-
+    color:var(--text-color);
 }
 
 .visually-hidden {
@@ -249,10 +231,6 @@ html {
     margin-right: 0px;
 }
 
-.description {
-   
-}
-
 .description-title {
     margin-bottom: 10px;
     font-weight: 700;
@@ -279,10 +257,6 @@ html {
     justify-content: space-between;
 }
 
-.about-item {
-
-}
-
 .about-item:nth-child(3n) {
 margin-right: 0px;
 }
@@ -297,7 +271,7 @@ margin-right: 0px;
 .team-list {
     display: flex;
     flex-wrap: wrap;
-  justify-content: space-between;
+    justify-content: space-between;
     }
 
 .team-item {
@@ -312,12 +286,11 @@ margin-right: 0px;
 
 
 .team {
-background-color: var(--primary-white-color);
+    background: #F5F4FA; 
 }
 
 .team-title {
-    
-    margin-bottom: 50px;
+   margin-bottom: 50px;
 }
 
 .about-title,
@@ -328,7 +301,7 @@ background-color: var(--primary-white-color);
 }
 
 .team-name {
-margin-bottom: 10px;
+      margin-bottom: 10px;
       font-weight: 500;
       font-size: 16px;
       line-height: 1.19;     
@@ -341,11 +314,14 @@ margin-bottom: 10px;
 }
 
  .wrapper {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
+        border: 1px solid #eeee;
+        border-top: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       text-align: center;
  }
+
+
 /* footer */
 
 .footer-logo {
@@ -356,9 +332,7 @@ margin-bottom: 10px;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        color: #FFFFFF;
-    
-
+        color:var(--text-color);
 }
 
 .footer {
@@ -367,11 +341,12 @@ margin-bottom: 10px;
     
 }
 .address {
-    font-style: normal;
+    font-style: normal;   
 }
 
-
-    
+.footer-link {
+    color: var(--primary-text-color);
+}
 
 
 .footer-contact-address {
@@ -380,7 +355,9 @@ margin-bottom: 10px;
     letter-spacing: 0.03em;
 }
 
-
+.footer-contact-item {
+    margin-bottom: 9px;
+}
 
 
 /* portfolio */
@@ -389,8 +366,7 @@ margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-right: -30px;
+
 }
 
 .btn-item {
@@ -405,14 +381,18 @@ margin-bottom: 10px;
 .card-wrapper {
 border: 1px solid #eeee;
 border-top: none;
+padding-top: 20px;
+padding-bottom: 20px;
+
 }
 
 .card-title {
-   font-weight: 700;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--logo-color);
+    margin-bottom: 4px;
 }
 
 .card-text {
@@ -425,16 +405,9 @@ border-top: none;
 .card-list {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: space-between;
 }
 
-.card-list img {
-  margin-bottom: 20px;
-}
-
-.card-list h2 {
-    margin-bottom: 4px;
-}
 
 
 .card-link {

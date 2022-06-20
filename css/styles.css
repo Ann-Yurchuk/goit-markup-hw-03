@@ -362,6 +362,10 @@ margin-right: 0px;
 
 /* portfolio */
 
+.portfolio {
+    background-color: var(--primary-white-color);
+}
+
 .btn-list {
     display: flex;
     flex-wrap: wrap;

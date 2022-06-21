@@ -370,13 +370,9 @@ margin-right: 0px;
 }
 
 .footer-contact-item:last-child {
-    margin-right: 0px;
+    margin-bottom: 0px;
 }
 
-
-.footer-contact-item:not(:last-child) {
-    margin-right: 0px;
-}
 
 /* portfolio */
 

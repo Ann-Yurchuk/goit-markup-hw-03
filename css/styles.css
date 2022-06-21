@@ -87,7 +87,6 @@ html {
 }
 
 .nav-list {
-    padding: 32px 0;
     margin-right: 50px;
 }
 
@@ -100,6 +99,10 @@ html {
    display: block;
 }
    
+.nav-item {
+padding: 32px 0;
+}
+
 .nav-item,
 .contact-link {
     font-weight: 500;
@@ -371,6 +374,10 @@ margin-right: 0px;
 }
 
 
+.footer-contact-item:not(:last-child) {
+    margin-right: 0px;
+}
+
 /* portfolio */
 
 .portfolio {
@@ -381,7 +388,7 @@ margin-right: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 

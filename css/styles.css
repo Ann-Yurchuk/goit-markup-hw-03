@@ -94,7 +94,7 @@ html {
     margin-right: 50px;
 }
 
-.nav-item:not(:last-child) {
+.nav-item:last-child {
     margin-right: 0px;
 }
 
@@ -102,7 +102,7 @@ html {
     margin-right: 50px;
 }
 
-.nav-list:not(:last-child) {
+.nav-list:last-child {
     margin-right: 0px;
 }
 
@@ -237,6 +237,7 @@ html {
 .description-lists {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;  
 }
 
 .description-link {
